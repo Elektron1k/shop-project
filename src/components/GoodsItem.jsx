@@ -4,6 +4,7 @@ function GoodsItem({
   displayDescription,
   price,
   displayAssets,
+  addGood,
 }) {
   return (
     <div className="card" id={offerId}>
@@ -15,7 +16,18 @@ function GoodsItem({
         <p>{displayDescription}</p>
       </div>
       <div className="card-action">
-        <button className="btn">BUY</button>
+        <button
+          className="btn"
+          onClick={() =>
+            addGood({
+              offerId,
+              displayName,
+              price: price.finalPrice,
+            })
+          }
+        >
+          BUY
+        </button>
         <span className="right price">{price.finalPrice} $</span>
       </div>
     </div>
