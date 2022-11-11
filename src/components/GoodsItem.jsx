@@ -7,7 +7,7 @@ function GoodsItem({
   addGood,
 }) {
   return (
-    <div className="card" id={offerId}>
+    <div className="card">
       <div className="card-image">
         <img src={displayAssets[0].full_background} alt={displayName} />
       </div>
