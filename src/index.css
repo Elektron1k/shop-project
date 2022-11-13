@@ -34,9 +34,6 @@ nav {
   flex-grow: 1;
 }
 
-.cart-quantity {
-}
-
 .cart {
   position: fixed;
   bottom: 2rem;
